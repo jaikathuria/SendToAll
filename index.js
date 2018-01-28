@@ -25,13 +25,13 @@ class sendToAll {
     }
     createTemplate(name) {
         return `
-        >**WEEKLY CHECK IN**
+>**WEEKLY CHECK IN**
 
-        Hey ${name}! How are you doing and how's the learning going?
+Hey ${name}! How are you doing and how's the learning going?
 
-        What are your goals for the coming week?
+What are your goals for the coming week?
 
-        Are you currently stuck on anything? If so, what are you facing?
+Are you currently stuck on anything? If so, what are you facing?
     `;
     }
     chatOpened(name) {
