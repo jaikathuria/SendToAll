@@ -1,17 +1,21 @@
 class sendToAll {
     constructor() {
             new Promise((resolve, reject) => {
-                // Add jQuery to Page
+            // Add jQuery to Page
+                // - Check if jQuery is already loaded
+                if(window.jQuery){
+                  resolve()
+                }
                 const $jquery = document.createElement('script');
                 $jquery.onload = resolve;
                 $jquery.src = `https://code.jquery.com/jquery-2.2.4.js`;
                 document.head.appendChild($jquery);
             }).then(() => {
-                // Creating An Array of Students 
+                // Creating An Array of Students
                 const cssClass = 'student-row--flex-row--rD3Y-';
                 this.studentArray = $(`.${cssClass}`).toArray();
                 this.last = this.studentArray.length -1;
-                // First Time mainHandler should be called manually 
+                // First Time mainHandler should be called manually
                 this.mainHandler();
             })
         }
@@ -34,7 +38,7 @@ New Year is the time to set new goals, make new resolutions and working hard to 
             return;
         }
         // Selecting the last element of Array
-        
+
         const student = this.studentArray[this.last];
         // Get Name of Student
         const name = $(student).text();
@@ -53,7 +57,7 @@ New Year is the time to set new goals, make new resolutions and working hard to 
             // Adding Text to Input Field
             const text = this.createTemplate(firstName);
             // Select the Input Field
-            const textarea = $('.send-input--form--25WLV textarea')
+            const textarea = $('.send-input--form--25WLV textarea') // Need to find a way to emulate the enter press.
                 // On ENTER the response would be sent as well as mainHandler should be called again.
             textarea.keyup((e) => {
                 if (e.which == 13) {
