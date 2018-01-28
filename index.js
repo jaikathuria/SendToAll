@@ -25,9 +25,13 @@ class sendToAll {
     }
     createTemplate(name) {
         return `
-Hey ${name}
-Hope you are enjoying the holiday season!
-New Year is the time to set new goals, make new resolutions and working hard to achieve them… make this upcoming year a new beginning for all your pending tasks, to complete them with more energy and zeal… Wishing you a focused and dedicated Happy New Year.
+        >**WEEKLY CHECK IN**
+
+        Hey ${name}! How are you doing and how's the learning going?
+
+        What are your goals for the coming week?
+
+        Are you currently stuck on anything? If so, what are you facing?
     `;
     }
     chatOpened(name) {
