@@ -26,11 +26,11 @@ class sendToAll {
     createTemplate(name) {
         return `
 >**WEEKLY CHECK IN**
-
+\n
 Hey ${name}! How are you doing and how's the learning going?
-
+\n
 What are your goals for the coming week?
-
+\n
 Are you currently stuck on anything? If so, what are you facing?
     `;
     }
