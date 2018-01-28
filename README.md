@@ -1,6 +1,6 @@
 # **sendToAll()**
 ## A utility script for sending a broadcast message to a selected group of mentees.
-*Note: This script still can't send messages automatically, though do most of the work for you. To send a message you just need to press **ENTER** *
+*Note: This script still can't send messages automatically, though do most of the work for you. To send a message you just need to press **ENTER***
 
 [![DUB](https://img.shields.io/dub/l/vibe-d.svg?style=for-the-badge)]()
 ## Requirements
@@ -24,7 +24,7 @@ Just a web browser!
     * Example:
     Say you want to wish all of your students on the New Year, then createTemplate method would look something like
 
-    ```
+```
   createTemplate(name) {
     return `
   Hey ${name}
@@ -32,7 +32,7 @@ Just a web browser!
   New Year is the time to set new goals, make new resolutions and working hard to achieve them… make this upcoming year a new beginning for all your pending tasks, to complete them with more energy and zeal… Wishing you a focused and dedicated Happy New Year.
     `;
   }
-      ```      
+```      
 
 * Once you have pasted the code, you need to run the following command:
 
